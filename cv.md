@@ -1,40 +1,53 @@
-## Name
-Aleksei Laptev
+
+# Aleksei Laptev
+
 ## Contacts
-<ul>
-<li><b>Location: </b>Minsk, Belarus</li>
-<li>2</li>
-<li><b>Github:</b> https://github.com/AlekseyLaptev</li>
-</ul>
+---
+
+* __Location:__ Minsk, Belarus
+* __Phone:__ +375 29 349-94-03
+* __Email:__ Hellwind@mail.ru
+* __Github:__ https://github.com/AlekseyLaptev
+* __Discort:__ Алексей Лаптев#3671
+
 
 ## Short info
-
+---
+The purpose of my studies is to get a new profession - a front-end developer.
+  In the course of half a year I study the basics of a new profession. It turned out that everything is not as simple as in advertising on YouTube, but I do not give up.
+I make up pages from layouts on Figma, I study JS and English
 
 
 ## Skills
-<li>HTML/HTML5</li>
-<li>CSS/CSS3</li>
-<li>JS</li>
-<li>ReactJS</li>
-<li>Sass</li>
-<li>Git</li>
+---
+* HTML
+* CSS/SASS
+* JS (Basic)
+* ReactJS (Basic)
+* Git(Basic)
 
 ## Code examples
-<code>
-    skills.forEach(skill => train(skill))
-</code>
+---
+```
+function multiply(a, b){
+  const res = a * b
+  return res
+}
+console.log(multiply(2,2))
+```
 
 ## Work exprerience
+---
 
 
 
 ## Education
-Belarussian national technical eniversity(BNTU)
+---
+Belarussian national technical eniversity(BNTU), Electrician Engineer
 
 ## Languages
+---
 
-<ul>
-<li>Belarussian-<b>Native</b></li>
-<li>Russian-<b>Native</b></li>
-<li>English-<b>A-1</b></li>
-</ul>
+* Belarussian-Native
+* Russian-Native
+* English-A-1
