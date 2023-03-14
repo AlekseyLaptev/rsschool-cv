@@ -1,4 +1,52 @@
-*.{
+* {
   margin: 0;
   padding: 0;
+}
+
+.wrapper {
+  width: 1500px;
+  margin: 0 auto;
+  background-color: #fdfdfd;
+  font-family: "Poppins";
+}
+
+header {
+  margin-top: 50px;
+  height: 250px;
+  background-color: #e0e0e0;
+  position: relative;
+
+}
+
+.name_container {
+  padding-top: 50px;
+  padding-left: 45px;
+}
+
+h1 {
+  font-size: 75px;
+}
+
+h2 {
+  font-size: 35px;
+}
+
+.img_container {
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+  overflow: hidden;
+  position: absolute;
+  right: 50px;
+  top: 35px;
+}
+
+img {
+  height: 100%;
+  width: 100%;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url(../assets/fonts/Poppins/Poppins-LightItalic.ttf);
 }
