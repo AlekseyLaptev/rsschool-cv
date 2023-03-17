@@ -63,6 +63,7 @@ img {
 
 .container {
   width: 25%;
+  padding-right: 20px;
   border-right: 1px solid #464849;
   transform: translateY(-5px);
 }
@@ -110,6 +111,7 @@ hr {
   align-items: center;
   justify-content: space-between;
   margin: 0 50px 15px;
+  gap: 10px;
 
   cursor: pointer;
 }
@@ -153,4 +155,204 @@ a:hover {
   src: url(../assets/fonts/Poppins/Poppins-LightItalic.ttf);
 }
 
-@media only screen and (min-width:768px) and (max-width:1360px) {}
+@media only screen and (min-width:706px) and (max-width:1360px) {
+  .main {
+    max-width: 768px;
+    font-size: 18px;
+  }
+
+  .header {
+    margin-top: 30px;
+    height: 200px;
+  }
+
+  section {
+    margin: 30px 25px;
+  }
+
+  .name_container {
+    padding-top: 30px;
+    padding-left: 25px;
+  }
+
+  h1 {
+    font-size: 55px;
+  }
+
+  h2 {
+    font-size: 25px;
+  }
+
+  .img_container {
+    width: 200px;
+    height: 200px;
+    right: 30px;
+    top: 70px;
+  }
+
+  .container {
+    padding-right: 10px;
+  }
+
+  ul {
+    margin-top: 55px;
+  }
+
+  .item {
+    gap: 10px;
+  }
+
+  .shot_info {
+    padding-bottom: 30px;
+  }
+
+  .shot_info * {
+    padding-left: 30px;
+  }
+
+  hr {
+    margin: 20px 0;
+  }
+
+  .info {
+    margin-bottom: 30px;
+  }
+
+  .skill {
+    margin-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  .code {
+    margin-top: 30px;
+    width: 300px;
+  }
+
+  .nav {
+    margin: 0 30px 15px;
+  }
+
+  footer {
+    margin-bottom: 30px;
+  }
+
+  .href_container {
+    margin-left: 10px;
+    padding: 20px;
+    gap: 10px;
+  }
+
+  .logo_container {
+    margin-right: 5px;
+  }
+
+  .logo {
+    width: 80px;
+  }
+}
+
+@media only screen and (min-width:360px) and (max-width:705px) {
+  .main {
+    width: 360px;
+    font-size: 14px;
+  }
+
+  .header {
+    margin-top: 15px;
+    height: 100px;
+  }
+
+  section {
+    margin: 15px 5px;
+  }
+
+  .name_container {
+    padding-top: 0px;
+    padding-left: 15px;
+  }
+
+  h1 {
+    font-size: 35px;
+  }
+
+  h2 {
+    font-size: 18px;
+  }
+
+  .img_container {
+    width: 100px;
+    height: 100px;
+    right: 10px;
+    top: 25px;
+  }
+
+  .container {
+    width: 37%;
+    padding-right: 10px;
+  }
+
+  ul {
+    margin-top: 25px;
+  }
+
+  .item {
+    gap: 10px;
+  }
+
+  .shot_info {
+    padding-bottom: 0px;
+    padding-left: 0;
+  }
+
+  .shot_info * {
+    padding-left: 10px;
+  }
+
+  hr {
+    margin: 10px 0;
+  }
+
+  .info {
+    margin-bottom: 15px;
+  }
+
+  .skill {
+    margin-top: 20px;
+    padding-bottom: 10px;
+  }
+
+  .code {
+    margin-top: 15px;
+    margin-right: 0;
+    width: 200px;
+  }
+
+  .nav {
+    margin: 0 20px 10px;
+  }
+
+  footer {
+    margin-bottom: 20px;
+  }
+
+  .href_container {
+    display: inline;
+    text-align: center;
+    padding: 10px;
+    gap: 5px;
+  }
+
+  .href_container p {
+    padding-left: 10px;
+    margin: 0 auto;
+  }
+
+  .logo_container {
+    margin-right: 5px;
+  }
+
+  .logo {
+    width: 40px;
+    margin: 0 auto;
+  }
+}
