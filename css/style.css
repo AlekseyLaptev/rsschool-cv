@@ -1,9 +1,15 @@
 * {
   margin: 0;
   padding: 0;
+  text-decoration: none;
+  color: inherit;
 }
 
-.wrapper {
+html {
+  scroll-behavior: smooth;
+}
+
+.main {
   max-width: 1500px;
   margin: 0 auto;
   background-color: #fdfdfd;
@@ -11,9 +17,10 @@
   border: 1px solid #e0e0e0;
   border-radius: 25px;
   font-size: 20px;
+  overflow: hidden;
 }
 
-header {
+.header {
   margin-top: 50px;
   height: 250px;
   background-color: #e0e0e0;
@@ -93,8 +100,57 @@ hr {
   padding-bottom: 50px;
 }
 
+.code {
+  margin-top: 50px;
+  width: 350px;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 50px 15px;
+
+  cursor: pointer;
+}
+
+footer {
+  display: flex;
+  background-color: #e0e0e0;
+  color: black;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+
+.href_container {
+  margin-left: 25px;
+  padding: 25px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.year {
+  display: flex;
+  gap: 10px;
+}
+
+.logo_container {
+  margin-right: 50px;
+}
+
+a:hover {
+  color: blue;
+}
+
+.logo {
+  width: 100px;
+}
 
 @font-face {
   font-family: "Poppins";
   src: url(../assets/fonts/Poppins/Poppins-LightItalic.ttf);
 }
+
+@media only screen and (min-width:768px) and (max-width:1360px) {}
