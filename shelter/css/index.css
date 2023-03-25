@@ -183,6 +183,10 @@ h3 {
     padding-bottom: 100px;
 }
 
+.our_position {
+    color: #545454;
+}
+
 .our_friends_container {
     padding: 80px 40px 0;
     display: flex;
@@ -256,7 +260,46 @@ h3 {
     margin: auto;
 }
 
-/* --  -- */
+/* -- Help -- */
+
+.help {
+    background: #FFFFFF;
+    padding-bottom: 100px;
+}
+
+.help_container {
+    padding: 80px 40px 0;
+}
+
+.icon_wrap {
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    row-gap: 55px;
+    column-gap: 120px;
+    flex-wrap: wrap;
+}
+
+.icon_container {
+    text-align: center;
+}
+
+.icon {
+    font-size: 51px;
+    color: #F1CDB3;
+}
+
+h4 {
+    font-family: 'Georgia_400';
+    font-size: 20px;
+    line-height: 115%;
+    letter-spacing: 0.06em;
+    color: #545454;
+}
+
+.icon_title {
+    margin-top: 30px;
+}
 
 @font-face {
     font-family: 'Georgia_ 400';
