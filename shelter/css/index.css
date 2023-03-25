@@ -139,10 +139,38 @@
     cursor: pointer;
 }
 
+.about {
+    background: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    gap: 120px;
+    padding-top: 80px;
+    padding-bottom: 100px;
+}
 
+.about_img_container{
+    height: 408px;
+}
 
+.about_content {
+    margin-top: 14px;
+    width: 430px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
 
+h3 {
+    font-family: 'Georgia_400';
+    font-size: 35px;
+    line-height: 130%;
+    letter-spacing: 0.06em;
+}
 
+.about_position {
+    color: #545454;
+    margin-right: 50px;
+}
 
 @font-face {
     font-family: 'Georgia_ 400';
