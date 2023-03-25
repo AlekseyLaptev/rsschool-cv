@@ -6,6 +6,8 @@
     cursor: default;
 }
 
+/* -- Section Main -- */
+
 .main {
     width: 1280px;
     margin: 0 auto;
@@ -66,8 +68,6 @@
     cursor: none;
 }
 
-
-
 .menu_title:active {
     border-bottom: 3px solid #F1CDB3;
     cursor: none;
@@ -124,20 +124,24 @@
     line-height: 130%;
     letter-spacing: 0.06em;
     color: #292929;
-    padding: 15px 45px;
-}
-
-.position_button {
-    width: 207px;
+    padding: 14px 45px;
     background: #F1CDB3;
     border-radius: 100px;
-    border: none;
+    border: 1px solid #F1CDB3;
 }
 
-.position_button:hover {
+.color_button {
+    background: #FAFAFA;
+    border-color: #FDDCC4;
+}
+
+.first_button:hover {
+    border-color: #FDDCC4;
     background: #FDDCC4;
     cursor: pointer;
 }
+
+/* -- Section About -- */
 
 .about {
     background: #FFFFFF;
@@ -148,7 +152,7 @@
     padding-bottom: 100px;
 }
 
-.about_img_container{
+.about_img_container {
     height: 408px;
 }
 
@@ -172,11 +176,93 @@ h3 {
     margin-right: 50px;
 }
 
+/* -- Section Our friends -- */
+
+.our_friends {
+    background: #F6F6F6;
+    padding-bottom: 100px;
+}
+
+.our_friends_container {
+    padding: 80px 40px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 60px;
+}
+
+.heading_wrap {
+    width: 400px;
+    height: 90px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.slider_container {
+    position: relative;
+    display: flex;
+    gap: 90px;
+    justify-content: center;
+    height: 435px;
+}
+
+.slider_navigation {
+    position: absolute;
+    left: 0;
+    top: 192px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.arrow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 52px;
+    height: 52px;
+    border: 2px solid #F1CDB3;
+    border-radius: 100px;
+}
+
+.arrow:hover {
+    background: #FDDCC4;
+    border: 2px solid #FDDCC4;
+    cursor: pointer;
+}
+
+.slider_cart {
+    width: 270px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+    background: #FAFAFA;
+    border-radius: 9px;
+}
+
+.cart_pets_name {
+    font-family: 'Georgia_400';
+    font-size: 20px;
+    line-height: 23px;
+    letter-spacing: 0.06em;
+    color: #545454;
+    text-align: center;
+    margin: 30px;
+}
+
+.position_button {
+    margin: auto;
+}
+
+/* --  -- */
+
 @font-face {
     font-family: 'Georgia_ 400';
     font-weight: 400;
     font-style: normal;
-    src: url(../assets/fonts/Georgia\ Regular\ font.ttf);
+    src: url(../assets/fonts/Georgia_Regular.ttf);
 }
 
 @font-face {
