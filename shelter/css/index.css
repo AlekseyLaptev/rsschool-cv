@@ -3,7 +3,11 @@
     padding: 0;
     text-decoration: none;
     color: inherit;
-    cursor: default;
+}
+
+html {
+    scroll-behavior: smooth;
+
 }
 
 /* -- Section Main -- */
@@ -241,9 +245,18 @@ h3 {
     width: 270px;
     display: flex;
     flex-direction: column;
-    margin-bottom: 30px;
+    padding-bottom: 30px;
     background: #FAFAFA;
     border-radius: 9px;
+}
+
+.slider_cart:hover {
+    cursor: pointer;
+    background: #FFFFFF;
+}
+
+.slider_cart:hover .first_button {
+    background: #FDDCC4;
 }
 
 .cart_pets_name {
@@ -264,7 +277,7 @@ h3 {
 
 .help {
     background: #FFFFFF;
-    padding-bottom: 100px;
+    padding-bottom: 97px;
 }
 
 .help_container {
@@ -275,17 +288,44 @@ h3 {
     margin-top: 60px;
     display: flex;
     justify-content: center;
-    row-gap: 55px;
+    row-gap: 52px;
     column-gap: 120px;
     flex-wrap: wrap;
 }
 
 .icon_container {
     text-align: center;
+    border-bottom: 3px solid #FFFFFF;
 }
 
 .icon {
     font-size: 51px;
+    color: #F1CDB3;
+}
+
+.icon_container:hover {
+    cursor: pointer;
+}
+
+.icon_container:hover .icon {
+    color: #FDDCC4;
+}
+
+.icon_container:hover .icon_title {
+    color: #292929;
+}
+
+.icon_container:active {
+    border-bottom: 3px solid #F1CDB3;
+    cursor: none;
+    color: #545454;
+}
+
+.icon_container:active .icon_title{
+    color: #545454;
+}
+
+.icon_container:active .icon{
     color: #F1CDB3;
 }
 
@@ -301,6 +341,64 @@ h4 {
     margin-top: 30px;
 }
 
+/* -- Donation -- */
+
+.donation {
+    background: #F6F6F6;
+}
+
+.donation_container {
+    padding: 80px 0 100px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.donation_img_wrap {
+    padding-top: 10px;
+}
+
+.donation_content_wrap {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+}
+
+.donation_position {
+    align-items: baseline;
+}
+
+h5 {
+    font-family: 'Georgia_400';
+    font-size: 15px;
+    line-height: 110%;
+    letter-spacing: 0.06em;
+}
+
+.heading_subtitle {
+    color: #545454;
+}
+
+.donation_button {
+    display: flex;
+    gap: 15px;
+    padding: 10px 15px;
+    border-radius: 9px;
+    width: 350px;
+}
+
+p {
+    font-family: 'Arial_400_italic';
+    font-size: 12px;
+    line-height: 18px;
+}
+
+.donation_content {
+    width: 380px;
+    color: #B2B2B2;
+}
+
 @font-face {
     font-family: 'Georgia_ 400';
     font-weight: 400;
@@ -313,4 +411,11 @@ h4 {
     font-weight: 400;
     font-style: normal;
     src: url(../assets/fonts/Arial\ regular.ttf);
+}
+
+@font-face {
+    font-family: 'Arial_400_italic';
+    font-weight: 400;
+    font-style: italic;
+    src: url(../assets/fonts/Arial_italic.ttf);
 }
