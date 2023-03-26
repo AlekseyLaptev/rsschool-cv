@@ -7,7 +7,6 @@
 
 html {
     scroll-behavior: smooth;
-
 }
 
 /* -- Section Main -- */
@@ -18,7 +17,7 @@ html {
     background: url(noise_lines_transparent@2X.png), radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%)
 }
 
-.footer {
+.header {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -39,6 +38,11 @@ html {
     line-height: 110%;
     letter-spacing: 0.06em;
     color: #F1CDB3;
+}
+
+.logo_container:hover {
+    color: #FDDCC4;
+    transition: all 0.3s ease-in-out;
 }
 
 .logo_subtitle {
@@ -64,6 +68,7 @@ html {
 .menu_title:hover {
     color: #FAFAFA;
     cursor: pointer;
+    transition: all 0.3s ease-in-out;
 }
 
 .menu_title:first-of-type {
@@ -81,7 +86,9 @@ html {
     padding-right: 0;
 }
 
-.start_screen {
+/* --Section Not only */
+
+.not_only {
     display: flex;
     justify-content: space-between;
 
@@ -134,6 +141,11 @@ html {
     border: 1px solid #F1CDB3;
 }
 
+.size_button {
+    box-sizing: border-box;
+    width: 207px;
+}
+
 .color_button {
     background: #FAFAFA;
     border-color: #FDDCC4;
@@ -143,6 +155,7 @@ html {
     border-color: #FDDCC4;
     background: #FDDCC4;
     cursor: pointer;
+    transition: all 0.3s ease-in-out;
 }
 
 /* -- Section About -- */
@@ -239,6 +252,7 @@ h3 {
     background: #FDDCC4;
     border: 2px solid #FDDCC4;
     cursor: pointer;
+    transition: all 0.3s ease-in-out;
 }
 
 .slider_cart {
@@ -253,10 +267,12 @@ h3 {
 .slider_cart:hover {
     cursor: pointer;
     background: #FFFFFF;
+    transition: all 0.3s ease-in-out;
 }
 
 .slider_cart:hover .first_button {
     background: #FDDCC4;
+    transition: all 0.3s ease-in-out;
 }
 
 .cart_pets_name {
@@ -305,14 +321,17 @@ h3 {
 
 .icon_container:hover {
     cursor: pointer;
+    transition: all 0.3s ease-in-out;
 }
 
 .icon_container:hover .icon {
     color: #FDDCC4;
+    transition: all 0.3s ease-in-out;
 }
 
 .icon_container:hover .icon_title {
     color: #292929;
+    transition: all 0.3s ease-in-out;
 }
 
 .icon_container:active {
@@ -321,24 +340,25 @@ h3 {
     color: #545454;
 }
 
-.icon_container:active .icon_title{
+.icon_container:active .icon_title {
     color: #545454;
 }
 
-.icon_container:active .icon{
+.icon_container:active .icon {
     color: #F1CDB3;
 }
 
-h4 {
+h4,
+.donation_color {
     font-family: 'Georgia_400';
     font-size: 20px;
     line-height: 115%;
     letter-spacing: 0.06em;
-    color: #545454;
 }
 
 .icon_title {
     margin-top: 30px;
+    color: #545454;
 }
 
 /* -- Donation -- */
@@ -376,7 +396,8 @@ h5 {
     letter-spacing: 0.06em;
 }
 
-.heading_subtitle {
+.heading_subtitle,
+.donation_color {
     color: #545454;
 }
 
@@ -397,6 +418,56 @@ p {
 .donation_content {
     width: 380px;
     color: #B2B2B2;
+}
+
+/* -- Footer -- */
+
+.footer_container {
+    padding: 40px 40px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.our_contacts,
+.our_mappoint {
+    width: 300px;
+    padding-right: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 45px;
+}
+
+.footer_position {
+    color: #FFFFFF;
+}
+
+.icon_wrapper {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    color: #F1CDB3;
+    border-bottom: 3px solid rgba(0, 0, 0, 0);
+}
+
+.icon-icon-email,
+.icon-icon-phone,
+.icon-pin {
+    font-size: 32px;
+}
+
+.icon_wrapper:hover {
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    color: #FDDCC4;
+}
+
+.icon_wrapper:active {
+    border-bottom: 3px solid #F1CDB3;
+    cursor: none;
+}
+
+.footer_img_container {
+    height: 310px;
 }
 
 @font-face {

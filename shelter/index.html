@@ -7,32 +7,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/index.css">
     <link rel="stylesheet" href="./css/icomoon.css">
+    <link rel="icon" href="./assets/favicon.ico" type="image/svg+xml">
     <script src="./script.js"></script>
-    <title>Document</title>
+    <title>Cozy House</title>
 </head>
 
 <body>
     <main class="main">
-        <footer class="footer">
-            <div class="logo_container">
-                <div class="logo_title">Cozy House</div>
+        <header class="header">
+            <a href="#" class="logo_container">
+                <h1 class="logo_title">Cozy House</h1>
                 <div class="logo_subtitle">Shelter for pets in Boston</div>
-            </div>
+            </a>
             <nav class="nav_menu">
                 <a href="#About" class="menu_title">About the shelter</a>
                 <a href="#" class="menu_title">Our pets</a>
                 <a href="#Help" class="menu_title">Help the shelter</a>
-                <a href="#" class="menu_title">Contacts</a>
+                <a href="#Footer" class="menu_title">Contacts</a>
             </nav>
-        </footer>
-        <section class="start_screen">
+        </header>
+        <section class="not_only">
             <div class="content">
                 <h2 class="heading heading_position">Not only people need a house</h2>
                 <div class="subheading start_screen_position">We offer to give a chance to a little and nice puppy with
                     an extremely wide and open heart. He or she will love you more than anybody else in the world, you
                     will see!</div>
                 <div class="button_wrap">
-                    <button class="first_button">Make a friend</button>
+                    <div class="first_button size_button" ><a href="#Our_friends">Make a friend</a></div>
                 </div>
             </div>
             <div class="img_container">
@@ -56,7 +57,7 @@
                     would hardly ever leave them alone.</div>
             </div>
         </section>
-        <section class="our_friends">
+        <section class="our_friends" id="Our_friends">
             <div class="our_friends_container">
                 <div class="heading_wrap">
                     <h3 class="our_position">Our friends who</h3>
@@ -174,17 +175,48 @@
                         <h3 class="our_position">make a donation</h3>
                     </div>
                     <h5 class="heading_subtitle">Name of the bank / Type of bank account</h5>
-                    <button class="first_button donation_button">
+                    <div class="first_button donation_button">
                         <img src="./assets/img/credit-card.svg" alt="bank_card">
-                        <h4>8380 2880 8028 8791 7435</h4>
-                    </button>
-                    <p class="donation_content">Legal information and lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas a ipsum
+                        <a href="#" class="donation_color">8380 2880 8028 8791 7435</a>
+                    </div>
+                    <p class="donation_content">Legal information and lorem ipsum dolor sit amet, consectetur adipiscing
+                        elit. Maecenas a ipsum
                         at libero sagittis dignissim sed ac diam. Praesent ultrices maximus tortor et vulputate.
                         Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
                 </div>
             </div>
         </section>
-
+        <footer class="footer" id="Footer">
+            <div class="footer_container">
+                <div class="our_contacts">
+                    <h3 class=" footer_position">For questions and suggestions</h3>
+                    <div class="icon_wrapper">
+                        <div class="icon-icon-email"></div>
+                        <h4 class="our_email">email@shelter.com</h4>
+                    </div>
+                    <a href="tel:+13_674_567_75_54" class="icon_wrapper">
+                        <div class="icon-icon-phone"></div>
+                        <h4 class="our_phone">+13 674 567 75 54</h4>
+                    </a>
+                </div>
+                <div class="our_mappoint">
+                    <h3 class="footer_position">We are waiting for your visit</h3>
+                    <a href="https://www.google.com/maps/place/%D0%91%D0%BE%D1%81%D1%82%D0%BE%D0%BD,+%D0%9C%D0%B0%D1%81%D1%81%D0%B0%D1%87%D1%83%D1%81%D0%B5%D1%82%D1%81,+%D0%A1%D0%A8%D0%90/@42.3513874,-71.0599832,15.75z/data=!4m6!3m5!1s0x89e3652d0d3d311b:0x787cbf240162e8a0!8m2!3d42.3600825!4d-71.0588801!16zL20vMDFjeF8?hl=ru"
+                        class="icon_wrapper" target="_blank">
+                        <div class="icon-pin"></div>
+                        <h4 class="map_point">1 Central Street, Boston (entrance from the store)</h4>
+                    </a>
+                    <a href="https://www.google.com/maps/place/%D0%9F%D0%B0%D1%80%D0%BA+%D0%AE%D0%B3/@51.4691267,-0.1995227,16.25z/data=!4m6!3m5!1s0x48760f79376fa0e3:0x202ac3af5c1ea4ec!8m2!3d51.4690816!4d-0.1944951!16s%2Fm%2F0cc6kk9?hl=ru"
+                        class="icon_wrapper" target="_blank">
+                        <div class="icon-pin"></div>
+                        <h4 class="map_point">18 South Park, London </h4>
+                    </a>
+                </div>
+                <div class="footer_img_container">
+                    <img src="./assets/img/footer-puppy.png" alt="puppy">
+                </div>
+            </div>
+        </footer>
     </main>
 </body>
 
