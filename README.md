@@ -1,1 +1,1 @@
-https://github.com/AlekseyLaptev/rsschool-cv/blob/shelter/shelter/index.html
+https://github.com/AlekseyLaptev/rsschool-cv/tree/shelter/shelter/index.html
