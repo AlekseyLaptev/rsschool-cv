@@ -1,1 +1,1 @@
-https://github.com/AlekseyLaptev/rsschool-cv/shelter/
+https://AlekseyLaptev.github.io/rsschool-cv/shelter/
