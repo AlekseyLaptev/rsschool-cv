@@ -23,7 +23,7 @@ html {
     justify-content: space-between;
 }
 
-.wrapper_block{
+.wrapper_block {
     width: 1280px;
     margin: 0 auto;
     display: block;
@@ -42,7 +42,7 @@ html {
 }
 
 .logo_title {
-    font-family: 'Georgia_ 400';
+    font-family: 'Georgia_400';
     font-size: 32px;
     line-height: 110%;
     letter-spacing: 0.06em;
@@ -63,6 +63,7 @@ html {
 }
 
 .nav_menu {
+    text-align: center;
     padding-right: 40px;
 }
 
@@ -72,6 +73,10 @@ html {
     line-height: 160%;
     color: #CDCDCD;
     margin-right: 35px;
+}
+
+.menu_title:last-of-type {
+    margin-right: 0;
 }
 
 .menu_title:hover {
@@ -103,7 +108,7 @@ html {
     gap: 42px;
     width: 460px;
     margin-left: 40px;
-    margin-top: 163px;
+    margin-top: -80px;
 }
 
 .heading {
@@ -144,9 +149,10 @@ html {
     border: 1px solid #F1CDB3;
 }
 
-.size_button {
+.size_button{
     box-sizing: border-box;
-    width: 207px;
+    width: 210px;
+
 }
 
 .color_button {
@@ -479,7 +485,7 @@ p {
 }
 
 @font-face {
-    font-family: 'Georgia_ 400';
+    font-family: 'Georgia_400';
     font-weight: 400;
     font-style: normal;
     src: url(../assets/fonts/Georgia_Regular.ttf);
