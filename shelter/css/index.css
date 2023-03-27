@@ -257,6 +257,7 @@ h3 {
 
 .slider_cart {
     width: 270px;
+    height: 405px;
     display: flex;
     flex-direction: column;
     padding-bottom: 30px;
