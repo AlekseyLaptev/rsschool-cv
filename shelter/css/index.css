@@ -12,15 +12,24 @@ html {
 /* -- Section Main -- */
 
 .main {
-    width: 1280px;
-    margin: 0 auto;
     background: url(noise_lines_transparent@2X.png), radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%)
 }
 
-.header {
+.wrapper {
+    width: 1280px;
+    margin: 0 auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+.wrapper_block{
+    width: 1280px;
+    margin: 0 auto;
+    display: block;
+}
+
+.header {
     margin-bottom: 90px;
 }
 
@@ -87,12 +96,6 @@ html {
 }
 
 /* --Section Not only */
-
-.not_only {
-    display: flex;
-    justify-content: space-between;
-
-}
 
 .content {
     display: flex;
@@ -435,7 +438,7 @@ p {
     padding-right: 15px;
     display: flex;
     flex-direction: column;
-    gap: 45px;
+    gap: 43px;
 }
 
 .footer_position {
@@ -448,6 +451,10 @@ p {
     align-items: center;
     color: #F1CDB3;
     border-bottom: 3px solid rgba(0, 0, 0, 0);
+}
+
+.title_position {
+    margin-top: -2px;
 }
 
 .icon-icon-email,
