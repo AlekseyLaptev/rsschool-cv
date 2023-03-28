@@ -566,8 +566,8 @@ p {
     .img_container {
         margin-right: 0px;
         height: 593px;
-        margin-top: 100px;
-        margin-left: 140px;
+        margin-top: 95px;
+        margin-left: 165px;
     }
 
     .button_wrap {
@@ -651,5 +651,29 @@ p {
         margin: auto;
     }
 
+    /* -- Footer -- */
+
+    .footer_container {
+        padding: 15px 60px 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .our_contacts {
+        padding-right: 10px;
+        padding-left: 3px;
+
+    }
+
+    .our_mappoint {
+        padding-right: 5px;
+    }
+
+    .footer_img_container {
+        height: 310px;
+        margin: 0 auto;
+        margin-top: 53px;
+    }
 
 }
