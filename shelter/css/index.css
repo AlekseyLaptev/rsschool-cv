@@ -136,6 +136,11 @@ html {
 .img_container {
     margin-right: 40px;
     height: 728px;
+    overflow: hidden;
+}
+
+.puppy {
+    width: 100%;
 }
 
 .first_button {
@@ -320,11 +325,12 @@ h3 {
     display: flex;
     justify-content: center;
     row-gap: 52px;
-    column-gap: 120px;
+    column-gap: 75px;
     flex-wrap: wrap;
 }
 
 .icon_container {
+    width: 170px;
     text-align: center;
     border-bottom: 3px solid #FFFFFF;
 }
@@ -517,5 +523,133 @@ p {
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1278px) {
-    
+
+    /* -- Section Main -- */
+
+    .main {
+        background: url(noise_lines_transparent@2X.png), radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%)
+    }
+
+    .wrapper {
+        width: 768px;
+    }
+
+    .wrapper_block {
+        width: 768px;
+    }
+
+    .header {
+        margin-bottom: 0px;
+    }
+
+    .logo_container {
+        padding-left: 30px;
+    }
+
+    .nav_menu {
+        padding-right: 50px;
+        margin-top: 30px;
+    }
+
+    /* --Section Not only */
+
+    .not_only .wrapper {
+        flex-direction: column;
+    }
+
+    .content {
+        margin-left: 0px;
+        margin-top: 60px;
+    }
+
+
+    .img_container {
+        margin-right: 0px;
+        height: 593px;
+        margin-top: 100px;
+        margin-left: 140px;
+    }
+
+    .button_wrap {
+        margin-left: 125px;
+    }
+
+    /* -- Section About -- */
+
+    .about {
+        flex-direction: column-reverse;
+        gap: 80px;
+        padding-top: 80px;
+    }
+
+    .about_img_container {
+        margin: 0 auto;
+    }
+
+    .about_content {
+        margin: 0 auto;
+    }
+
+    /* -- Section Our friends -- */
+
+    .our_friends_container {
+        padding: 80px 30px 0;
+    }
+
+    .slider_container {
+        gap: 45px;
+    }
+
+    .slider_navigation {
+        top: 190px;
+    }
+
+    /* .slider_cart:nth-of-type(3), */
+    .slider_cart:nth-of-type(4),
+    .slider_cart:nth-of-type(5),
+    .slider_cart:nth-of-type(6) {
+        display: none;
+    }
+
+    .position_button {
+        margin: auto;
+    }
+
+    .position_button1 {
+        margin: auto;
+        margin-top: 13px;
+    }
+
+
+    /* -- Help -- */
+
+    .icon_wrap {
+        column-gap: 60px;
+
+    }
+
+    /* -- Donation -- */
+
+    .donation {
+        background: #F6F6F6;
+    }
+
+    .donation_container {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .donation_img_wrap {
+        padding-top: 25px;
+        padding-left: 0px;
+        margin: auto;
+    }
+
+    .donation_content_wrap {
+        gap: 19px;
+        padding-left: 20px;
+        margin: auto;
+    }
+
+
 }
