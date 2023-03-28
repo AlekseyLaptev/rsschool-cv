@@ -515,3 +515,7 @@ p {
     font-style: italic;
     src: url(../assets/fonts/Arial_italic.ttf);
 }
+
+@media only screen and (min-width: 768px) and (max-width: 1278px) {
+    
+}
