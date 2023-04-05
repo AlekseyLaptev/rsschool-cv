@@ -107,21 +107,21 @@ html {
     justify-content: space-between;
     width: 30px;
     height: 22px;
-    display: none; 
+    display: none;
+    cursor: pointer;
 }
 
-.top{
+.top {
     border-top: 2px solid #F1CDB3;
 }
 
-.center{
+.center {
     border: 1px solid #F1CDB3;
 }
 
-.bottom{
+.bottom {
     border-bottom: 2px solid #F1CDB3;
 }
-
 
 /* --Section Not only */
 
@@ -584,7 +584,6 @@ p {
         margin-top: 60px;
     }
 
-
     .img_container {
         margin-right: 0px;
         height: 593px;
@@ -698,4 +697,104 @@ p {
         margin-top: 53px;
     }
 
+}
+
+@media only screen and (min-width: 320px) and (max-width: 749px) {
+
+    /* -- Section Main -- */
+
+    .header {
+        margin-bottom: 0;
+    }
+
+    .wrapper,
+    .wrapper_block {
+        width: 320px;
+    }
+
+    .logo_container {
+        padding-left: 20px;
+    }
+
+    .menu_title {
+        display: none;
+    }
+
+    .nav_menu {
+        padding-right: 20px;
+        margin-top: 30px;
+    }
+
+    .burger_icon {
+        display: flex;
+    }
+
+    /* --Section Not only */
+    .not_only .wrapper {
+        flex-direction: column;
+    }
+
+    .content {
+        gap: 42px;
+        width: 300px;
+        margin-left: 10px;
+        margin-top: 60px;
+    }
+
+    .heading {
+        font-size: 25px;
+    }
+
+    .heading_position {
+        margin-right: 0px;
+        text-align: center;
+        margin-left: 25px;
+        width: 230px;
+    }
+
+    .img_container {
+        margin-right: 10px;
+        height: 271px;
+        margin-top: 105px;
+        margin-left: 50px;
+    }
+
+    .button_wrap {
+        margin-left: 40px;
+    }
+
+    /* -- Section About -- */
+
+    .about {
+        background: #FFFFFF;
+        display: flex;
+        justify-content: center;
+        gap: 120px;
+        padding-top: 80px;
+        padding-bottom: 100px;
+    }
+
+    .about_img_container {
+        height: 408px;
+    }
+
+    .about_content {
+        margin-top: 14px;
+        width: 430px;
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    h3 {
+        font-family: 'Georgia_400';
+        font-size: 35px;
+        line-height: 130%;
+        letter-spacing: 0.06em;
+    }
+
+    .about_position {
+        color: #545454;
+        margin-right: 50px;
+    }
 }
