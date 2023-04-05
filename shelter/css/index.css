@@ -747,7 +747,7 @@ p {
     .heading_position {
         margin-right: 0px;
         text-align: center;
-        margin-left: 25px;
+        margin-left: 10px;
         width: 230px;
     }
 
@@ -759,7 +759,7 @@ p {
     }
 
     .button_wrap {
-        margin-left: 40px;
+        margin-left: 30px;
     }
 
     /* -- Section About -- */
@@ -836,5 +836,153 @@ p {
     .position_button1 {
         margin: auto;
         margin-top: 85px;
+    }
+
+    /* -- Help -- */
+
+    .help {
+        padding-bottom: 15px;
+    }
+
+    .help_container {
+        padding: 42px 10px 0;
+    }
+
+    .icon_wrap {
+        margin-top: 43px;
+        row-gap: 25px;
+        column-gap: 52px;
+    }
+
+    .icon_container {
+        width: 110px;
+    }
+
+    .icon_container:last-of-type {
+        margin-right: 160px;
+    }
+
+    .icon {
+        font-size: 50px;
+    }
+
+    h4,
+    .donation_color {
+        font-size: 15px;
+    }
+
+    .icon_title {
+        margin-top: 10px;
+    }
+
+    /* -- Donation -- */
+
+    .donation_container {
+        padding: 42px 0 37px;
+        flex-direction: column-reverse;
+        gap: 30px;
+    }
+
+    .donation_img_wrap {
+        padding-top: 0px;
+        padding-left: 0px;
+        margin-left: 26px;
+        margin-top: 11px;
+    }
+
+    .dog {
+        width: 90%;
+    }
+
+    .donation_content_wrap {
+        gap: 24px;
+
+    }
+
+    .donation_position {
+        align-items: center;
+    }
+
+    h5 {
+        font-family: 'Georgia_400';
+        font-size: 15px;
+        line-height: 110%;
+        letter-spacing: 0.06em;
+    }
+
+    .heading_subtitle,
+    .donation_color {
+        margin: 0 auto;
+    }
+
+    .donation_button {
+        gap: 10px;
+        padding: 10px 15px;
+        border-radius: 9px;
+        width: 250px;
+        font-size: 15px;
+        margin-left: 19px;
+    }
+
+    .donation_content {
+        width: 280px;
+        margin: 0 auto;
+        margin-top: -5px;
+    }
+
+    /* -- Footer -- */
+
+    .footer_container {
+        padding: 15px 10px 0;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .our_email,
+    .our_phone {
+        font-size: 20px;
+    }
+
+    .icon_wrapper {
+        margin-left: 24px;
+    }
+
+    .tel_position {
+        margin-top: -5px;
+        margin-left: 29px;
+    }
+
+    .our_mappoint {
+        padding-top: 30px;
+        text-align: center;
+        width: 294px;
+        padding-right: 0;
+    }
+
+    .title_position {
+        margin-top: 3px;
+        margin-left: 0;
+        gap: 5px;
+    }
+
+    .map_point {
+        font-size: 20px;
+    }
+
+    .icon-icon-email,
+    .icon-icon-phone,
+    .icon-pin {
+        font-size: 32px;
+    }
+
+    .footer_img_container {
+        height: 269px;
+        margin-top: 25px;
+        overflow: hidden;
+    }
+
+    .puppy_1{
+        width: 88%;
     }
 }
