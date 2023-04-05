@@ -625,7 +625,6 @@ p {
         top: 190px;
     }
 
-    /* .slider_cart:nth-of-type(3), */
     .slider_cart:nth-of-type(4),
     .slider_cart:nth-of-type(5),
     .slider_cart:nth-of-type(6) {
@@ -736,7 +735,7 @@ p {
 
     .content {
         gap: 42px;
-        width: 300px;
+        width: 280px;
         margin-left: 10px;
         margin-top: 60px;
     }
@@ -766,35 +765,76 @@ p {
     /* -- Section About -- */
 
     .about {
-        background: #FFFFFF;
-        display: flex;
+        flex-direction: column-reverse;
         justify-content: center;
-        gap: 120px;
-        padding-top: 80px;
-        padding-bottom: 100px;
+        gap: 80px;
+        padding-top: 40px;
+        padding-bottom: 0px;
     }
 
     .about_img_container {
-        height: 408px;
+        height: 353px;
+        margin-left: 30px;
+        margin-top: 6px;
+    }
+
+    .pets {
+        width: 95%;
     }
 
     .about_content {
-        margin-top: 14px;
-        width: 430px;
-        display: flex;
-        flex-direction: column;
-        gap: 25px;
+        width: 270px;
+        margin: 0 25px;
     }
 
     h3 {
-        font-family: 'Georgia_400';
-        font-size: 35px;
-        line-height: 130%;
-        letter-spacing: 0.06em;
+        font-size: 25px;
     }
 
     .about_position {
-        color: #545454;
-        margin-right: 50px;
+        margin-right: 0px;
+        margin-left: 2px;
+        text-align: center;
+    }
+
+    /* -- Section Our friends -- */
+
+    .our_friends {
+        padding-bottom: 55px;
+    }
+
+
+    .our_friends_container {
+        padding: 85px 10px 0;
+        gap: 44px;
+    }
+
+    .heading_wrap {
+        width: 300px;
+        height: 64px;
+    }
+
+    .slider_navigation {
+        position: absolute;
+        top: 455px;
+        justify-content: center;
+        gap: 80px;
+    }
+
+    .slider_cart:nth-of-type(3),
+    .slider_cart:nth-of-type(4),
+    .slider_cart:nth-of-type(5),
+    .slider_cart:nth-of-type(6) {
+        display: none;
+    }
+
+
+    .position_button {
+        margin-top: 5px;
+    }
+
+    .position_button1 {
+        margin: auto;
+        margin-top: 85px;
     }
 }
