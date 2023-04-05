@@ -101,6 +101,28 @@ html {
     padding-right: 0;
 }
 
+.burger_icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 22px;
+    display: none; 
+}
+
+.top{
+    border-top: 2px solid #F1CDB3;
+}
+
+.center{
+    border: 1px solid #F1CDB3;
+}
+
+.bottom{
+    border-bottom: 2px solid #F1CDB3;
+}
+
+
 /* --Section Not only */
 
 .content {
@@ -522,7 +544,7 @@ p {
     src: url(../assets/fonts/Arial_italic.ttf);
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1278px) {
+@media only screen and (min-width: 750px) and (max-width: 1278px) {
 
     /* -- Section Main -- */
 
