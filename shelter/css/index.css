@@ -42,10 +42,10 @@ html {
 }
 
 .logo_title {
-    font-family: 'Georgia_400';
+    font-family: 'Georgia';
     font-size: 32px;
     line-height: 110%;
-    letter-spacing: 0.06em;
+    letter-spacing: 0.06rem;
     color: #F1CDB3;
 }
 
@@ -55,7 +55,7 @@ html {
 }
 
 .logo_subtitle {
-    font-family: 'Arial_400';
+    font-family: 'Arial';
     font-size: 13px;
     line-height: 15px;
     letter-spacing: 0.1em;
@@ -64,16 +64,16 @@ html {
 
 .nav_menu {
     text-align: center;
-    padding-right: 60px;
-    margin-top: 20px;
+    padding-right: 40px;
+    margin-top: 25px;
 }
 
 .menu_title {
-    font-family: 'Arial_400';
+    font-family: 'Arial';
     font-size: 15px;
     line-height: 160%;
     color: #CDCDCD;
-    margin-right: 35px;
+    margin-right: 32px;
 }
 
 .menu_title:last-of-type {
@@ -135,7 +135,7 @@ html {
 }
 
 .heading {
-    font-family: 'Georgia_400';
+    font-family: 'Georgia';
     font-size: 44px;
     line-height: 130%;
 }
@@ -146,7 +146,7 @@ html {
 }
 
 .subheading {
-    font-family: 'Arial_400';
+    font-family: 'Arial';
     font-size: 15px;
     line-height: 160%;
 }
@@ -166,7 +166,7 @@ html {
 }
 
 .first_button {
-    font-family: 'Georgia_400';
+    font-family: 'Georgia';
     font-size: 17px;
     line-height: 130%;
     letter-spacing: 0.06em;
@@ -219,7 +219,7 @@ html {
 }
 
 h3 {
-    font-family: 'Georgia_400';
+    font-family: 'Georgia';
     font-size: 35px;
     line-height: 130%;
     letter-spacing: 0.06em;
@@ -313,7 +313,7 @@ h3 {
 }
 
 .cart_pets_name {
-    font-family: 'Georgia_400';
+    font-family: 'Georgia';
     font-size: 20px;
     line-height: 23px;
     letter-spacing: 0.06em;
@@ -347,7 +347,7 @@ h3 {
     display: flex;
     justify-content: center;
     row-gap: 52px;
-    column-gap: 75px;
+    column-gap: 65px;
     flex-wrap: wrap;
 }
 
@@ -393,7 +393,7 @@ h3 {
 
 h4,
 .donation_color {
-    font-family: 'Georgia_400';
+    font-family: 'Georgia';
     font-size: 20px;
     line-height: 115%;
     letter-spacing: 0.06em;
@@ -434,7 +434,7 @@ h4,
 }
 
 h5 {
-    font-family: 'Georgia_400';
+    font-family: 'Georgia';
     font-size: 15px;
     line-height: 110%;
     letter-spacing: 0.06em;
@@ -454,7 +454,8 @@ h5 {
 }
 
 p {
-    font-family: 'Arial_400_italic';
+    font-family: 'Arial';
+    font-style: italic;
     font-size: 12px;
     line-height: 18px;
 }
@@ -524,24 +525,17 @@ p {
 }
 
 @font-face {
-    font-family: 'Georgia_400';
+    font-family: 'Georgia'; 
     font-weight: 400;
     font-style: normal;
     src: url(../assets/fonts/Georgia_Regular.ttf);
 }
 
 @font-face {
-    font-family: 'Arial_400';
+    font-family: 'Arial';
     font-weight: 400;
     font-style: normal;
     src: url(../assets/fonts/Arial\ regular.ttf);
-}
-
-@font-face {
-    font-family: 'Arial_400_italic';
-    font-weight: 400;
-    font-style: italic;
-    src: url(../assets/fonts/Arial_italic.ttf);
 }
 
 @media only screen and (min-width: 750px) and (max-width: 1278px) {
@@ -569,8 +563,8 @@ p {
     }
 
     .nav_menu {
-        padding-right: 50px;
-        margin-top: 30px;
+        padding-right: 33px;
+        margin-top: 24px;
     }
 
     /* --Section Not only */
@@ -712,7 +706,7 @@ p {
     }
 
     .logo_container {
-        padding-left: 20px;
+        padding-left: 22px;
     }
 
     .menu_title {
@@ -747,7 +741,7 @@ p {
     .heading_position {
         margin-right: 0px;
         text-align: center;
-        margin-left: 10px;
+        margin-left: 15px;
         width: 230px;
     }
 
@@ -760,6 +754,7 @@ p {
 
     .button_wrap {
         margin-left: 30px;
+        margin-top: -26px;
     }
 
     /* -- Section About -- */
@@ -767,24 +762,25 @@ p {
     .about {
         flex-direction: column-reverse;
         justify-content: center;
-        gap: 80px;
+        gap: 35px;
         padding-top: 40px;
-        padding-bottom: 0px;
+        padding-bottom: 45px;
     }
 
     .about_img_container {
         height: 353px;
-        margin-left: 30px;
-        margin-top: 6px;
+        margin-left: 0px;
+        margin-top: 3px;
+        text-align: center;
     }
 
     .pets {
-        width: 95%;
+        height: 100%;
     }
 
     .about_content {
         width: 270px;
-        margin: 0 25px;
+        margin: 0 auto;
     }
 
     h3 {
@@ -793,6 +789,7 @@ p {
 
     .about_position {
         margin-right: 0px;
+        margin-top: 2px;
         margin-left: 2px;
         text-align: center;
     }
@@ -805,7 +802,7 @@ p {
 
 
     .our_friends_container {
-        padding: 85px 10px 0;
+        padding: 40px 10px 0;
         gap: 44px;
     }
 
@@ -831,6 +828,7 @@ p {
 
     .position_button {
         margin-top: 5px;
+        margin-left: 40px;
     }
 
     .position_button1 {
@@ -904,7 +902,7 @@ p {
     }
 
     h5 {
-        font-family: 'Georgia_400';
+        font-family: 'Georgia';
         font-size: 15px;
         line-height: 110%;
         letter-spacing: 0.06em;
