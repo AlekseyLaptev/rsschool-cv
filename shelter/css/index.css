@@ -5,6 +5,10 @@
     color: inherit;
 }
 
+:root {
+    --transition: all 1s ease-in-out;
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -101,7 +105,61 @@ html {
     padding-right: 0;
 }
 
+.burger_wrapper {
+    width: 100%;
+    height: 100vh;
+    background: rgba(41, 41, 41, 0.6);
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateX(100%);
+    transition: var(--transition);
+}
+
+.burger_wrapper.active {
+    transform: translate(0);
+    transition: var(--transition);
+}
+
+.burger_container {
+    position: absolute;
+    top: -2px;
+    width: 320px;
+    height: 823px;
+    background: #292929;
+}
+
+.burger_menu {
+    margin-top: 250px;
+}
+
+.burger_title {
+    list-style-type: none;
+    margin: 0 auto;
+}
+
+.burger_subtitle {
+    font-family: 'Arial';
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 160%;
+    color: #CDCDCD;
+    text-align: center;
+    margin-top: 41px;
+}
+
+.burger_subtitle a:hover {
+    color: #FAFAFA;
+    border-bottom: 3px solid #F1CDB3;
+    transition: var(--transition);
+}
+
 .burger_icon {
+    position: relative;
+    z-index: 100;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -109,6 +167,13 @@ html {
     height: 22px;
     display: none;
     cursor: pointer;
+    transition: var(--transition);
+}
+
+.burger_icon.active {
+    transform: rotate(90deg);
+    margin-right: 2px;
+    transition: var(--transition);
 }
 
 .top {
@@ -525,7 +590,7 @@ p {
 }
 
 @font-face {
-    font-family: 'Georgia'; 
+    font-family: 'Georgia';
     font-weight: 400;
     font-style: normal;
     src: url(../assets/fonts/Georgia_Regular.ttf);
@@ -980,7 +1045,7 @@ p {
         overflow: hidden;
     }
 
-    .puppy_1{
+    .puppy_1 {
         width: 88%;
     }
 }
