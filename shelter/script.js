@@ -1,5 +1,6 @@
-const modalWindow = ({ name, img, type, breed, description, age, inoculations, diseases, parasites }) => {
-    if (document.getElementsByClassName("modal_window").length == 0) {
+function modalWindow({ name, img, type, breed, description, age, inoculations, diseases, parasites }) {
+    const modalBackgrounds = document.getElementsByClassName("modal_window")
+    if (modalBackgrounds.length == 0) {
         const modal = ` 
                 <div class="modal_window">
                 <div class="modal_cart_container">
@@ -23,28 +24,62 @@ const modalWindow = ({ name, img, type, breed, description, age, inoculations, d
                 </div>`
         document.body.innerHTML += modal;
     } else {
-        // add class
-    }
+        const modalBackground = modalBackgrounds[0]
+        const classes = modalBackground.classList;
+        //update fields
+        modalBackground.getElementsByClassName("modal_pets")[0].src = img
+        modalBackground.getElementsByClassName("modal_heading")[0].innerHTML = name
+        modalBackground.getElementsByClassName("modal_subtitle")[0].innerHTML = `${type} - ${breed}`
+        modalBackground.getElementsByClassName("modal_text")[0].innerHTML = description
+        modalBackground.getElementsByClassName("Age")[0].innerHTML = age
+        modalBackground.getElementsByClassName("Inoculations")[0].innerHTML = inoculations
+        modalBackground.getElementsByClassName("Diseases")[0].innerHTML = diseases
+        modalBackground.getElementsByClassName("Parasites")[0].innerHTML = parasites
 
+        if(classes.contains("modal_invisible")) {
+            classes.remove("modal_invisible")
+        }
+    }
+    document.getElementsByClassName("modal_window")[0].style.top = `${window.scrollY}px`
+    document.body.classList.add('body_no_scroll')
 };
-// modalWindow(pets[0])
-Array.from(document.getElementsByClassName("slider_cart"))
-    .forEach(el => {
-        el.addEventListener("click", () => modalWindow[pets[0]], false)
-    })
-
-document.body.addEventListener("click", (e) => {
-    if (e.target.classList.contains("modal_window")) {
-        document.body.removeChild(document.getElementsByClassName("modal_window")[0])
-    }
-})
-
-
-// Burger 
 
 const burger = document.getElementsByClassName('burger_icon')[0];
 const burgerWrapper = document.getElementsByClassName('burger_wrapper')[0];
 const anchors = document.querySelectorAll('.burger_wrapper a')
+
+document.body.addEventListener("click", (e) => {
+    // console.log("Body",e.target)
+    const targetElement = e.target;
+    if(targetElement.closest(".slider_cart") != null) {
+        const card = targetElement.closest(".slider_cart")
+        
+        const num = +card.dataset.number || 0
+        console.log(num)
+        modalWindow(pets[num])
+        return
+    }
+
+    if(targetElement.closest(".burger_icon")) {
+        console.log("hereeeeeeeeeeeeeeeeeeeeeeeeeeeeee")
+        console.log(burgerWrapper)
+        targetElement.classList.toggle('active')
+        document.getElementsByClassName('burger_wrapper')[0].classList.toggle('active')
+        document.body.classList.toggle('body_no_scroll')
+        return
+    }
+    const modal = targetElement.closest(".modal_cart_container")
+    const closeBtn = targetElement.closest(".close_btn")
+    const modalWindowBlock = document.getElementsByClassName("modal_window")[0]
+    if (modal == null && modalWindowBlock || closeBtn != null) {
+        modalWindowBlock.classList.add("modal_invisible")
+        document.body.classList.remove('body_no_scroll')
+    }
+},true)
+
+
+// Burger 
+
 anchors.forEach(el => {
     el.addEventListener('click', (e) => {
         setTimeout(()=> {
@@ -53,11 +88,4 @@ anchors.forEach(el => {
             document.body.classList.remove('body_no_scroll')
         },100)
     })
-})
-
-burger.addEventListener('click', () => {
-    burger.classList.toggle('active')
-    burgerWrapper.classList.toggle('active')
-    document.body.classList.toggle('body_no_scroll')
-
 })

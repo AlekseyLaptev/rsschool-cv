@@ -6,11 +6,15 @@
 }
 
 :root {
-    --transition: all 1s ease-in-out;
+    --transition: all 0.5s ease-in-out;
 }
 
 html {
     scroll-behavior: smooth;
+}
+
+body {
+    overflow-x: hidden;
 }
 
 /* -- Section Main -- */
@@ -122,6 +126,7 @@ html {
 .burger_wrapper.active {
     transform: translate(0);
     transition: var(--transition);
+    z-index: 2;
 }
 
 .burger_container {
@@ -603,7 +608,7 @@ p {
     src: url(../assets/fonts/Arial\ regular.ttf);
 }
 
-@media only screen and (min-width: 750px) and (max-width: 1278px) {
+@media only screen and (min-width: 768px) and (max-width: 1278px) {
 
     /* -- Section Main -- */
 
@@ -757,7 +762,7 @@ p {
 
 }
 
-@media only screen and (min-width: 320px) and (max-width: 749px) {
+@media only screen and (min-width: 320px) and (max-width: 767px) {
 
     /* -- Section Main -- */
 
