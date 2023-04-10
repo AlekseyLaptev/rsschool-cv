@@ -89,3 +89,27 @@ anchors.forEach(el => {
         },100)
     })
 })
+let left = 0;
+// carousel
+const container = document.querySelector(".slider_container")
+const sliderLine = document.querySelector(".slider-line")
+container.addEventListener("click",(e)=> {
+    if(e.target.closest(".arrow_prev") != null) {
+        left -= 1080;
+    }
+    if(e.target.closest(".arrow_next")  != null) {
+        left += 1080;
+    } 
+    sliderLine.style.left = `${left}px`;
+})
+
+// sliderLine.addEventListener("transitionend",(e)=> {
+//     if(left == -2*1080) {
+//         left = 0;
+//     }
+//     if(left == 0) {
+//         left = -2 * 1080;
+//     }
+//     sliderLine.style.transition = "none";
+//     sliderLine.style.left = `${left}px`;
+// })

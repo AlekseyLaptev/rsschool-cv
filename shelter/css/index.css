@@ -336,16 +336,8 @@ h3 {
     height: 435px;
 }
 
-.slider_navigation {
-    position: absolute;
-    left: 0;
-    top: 192px;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-}
-
 .arrow {
+    position: absolute;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -355,11 +347,34 @@ h3 {
     border-radius: 100px;
 }
 
+.arrow_prev {
+    top: 192px;
+    left: -2px;
+}
+
+.arrow_next {
+    top: 192px;
+    right: 2px;
+}
+
 .arrow:hover {
     background: #FDDCC4;
     border: 2px solid #FDDCC4;
     cursor: pointer;
     transition: all 0.3s ease-in-out;
+}
+
+.slider_cart_container {
+    width: 990px;
+    overflow-x: hidden;
+}
+
+.slider-line {
+    display: flex;
+    gap: 90px;
+    position: relative;
+    left: 0px;
+    transition: var(--transition);
 }
 
 .slider_cart {
@@ -394,6 +409,7 @@ h3 {
 
 .position_button {
     margin: auto;
+    margin-top: 5px;
 }
 
 .position_button1 {
@@ -678,15 +694,16 @@ p {
     /* -- Section Our friends -- */
 
     .our_friends_container {
-        padding: 80px 30px 0;
+        padding: 85px 30px 0;
     }
 
-    .slider_container {
-        gap: 45px;
+    .slider_cart_container {
+        width: 580px;
+
     }
 
-    .slider_navigation {
-        top: 190px;
+    .slider-line {
+        gap: 39px;
     }
 
     .slider_cart:nth-of-type(4),
@@ -697,6 +714,7 @@ p {
 
     .position_button {
         margin: auto;
+        margin-top: 5px;
     }
 
     .position_button1 {
@@ -870,7 +888,6 @@ p {
         padding-bottom: 55px;
     }
 
-
     .our_friends_container {
         padding: 40px 10px 0;
         gap: 44px;
@@ -881,13 +898,6 @@ p {
         height: 64px;
     }
 
-    .slider_navigation {
-        position: absolute;
-        top: 455px;
-        justify-content: center;
-        gap: 80px;
-    }
-
     .slider_cart:nth-of-type(3),
     .slider_cart:nth-of-type(4),
     .slider_cart:nth-of-type(5),
@@ -895,6 +905,19 @@ p {
         display: none;
     }
 
+    .slider_cart_container {
+        width: 270px;
+    }
+
+    .arrow_prev {
+        left: 58px;
+        top: 453px;
+    }
+
+    .arrow_next {
+        right: 58px;
+        top: 453px;
+    }
 
     .position_button {
         margin-top: 5px;
