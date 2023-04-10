@@ -34,7 +34,7 @@ const pets = [
     },
     {
         "name": "Scarlett",
-        "img": "./assets/img/pets-scarlett.png",
+        "img": "./assets/img/pets-scarlet.png",
         "type": "Dog",
         "breed": "Jack Russell Terrier",
         "description": "Scarlett is a happy, playful girl who will make you laugh and smile. She forms a bond quickly and will make a loyal companion and a wonderful family dog or a good companion for a single individual too since she likes to hang out and be with her human.",
@@ -67,7 +67,7 @@ const pets = [
     },
     {
         "name": "Freddie",
-        "img": "./assets/img/pets-freddie.png",
+        "img": "./assets/img/pets-fredie.png",
         "type": "Cat",
         "breed": "British Shorthair",
         "description": "Freddie is a little shy at first, but very sweet when he warms up. He likes playing with shoe strings and bottle caps. He is quick to learn the rhythms of his human’s daily life. Freddie has bounced around a lot in his life, and is looking to find his forever home.",

@@ -36,7 +36,7 @@ function modalWindow({ name, img, type, breed, description, age, inoculations, d
         modalBackground.getElementsByClassName("Diseases")[0].innerHTML = diseases
         modalBackground.getElementsByClassName("Parasites")[0].innerHTML = parasites
 
-        if(classes.contains("modal_invisible")) {
+        if (classes.contains("modal_invisible")) {
             classes.remove("modal_invisible")
         }
     }
@@ -51,16 +51,16 @@ const anchors = document.querySelectorAll('.burger_wrapper a')
 document.body.addEventListener("click", (e) => {
     // console.log("Body",e.target)
     const targetElement = e.target;
-    if(targetElement.closest(".slider_cart") != null) {
+    if (targetElement.closest(".slider_cart") != null) {
         const card = targetElement.closest(".slider_cart")
-        
+
         const num = +card.dataset.number || 0
         console.log(num)
         modalWindow(pets[num])
         return
     }
 
-    if(targetElement.closest(".burger_icon")) {
+    if (targetElement.closest(".burger_icon")) {
         console.log("hereeeeeeeeeeeeeeeeeeeeeeeeeeeeee")
         console.log(burgerWrapper)
         targetElement.classList.toggle('active')
@@ -75,41 +75,44 @@ document.body.addEventListener("click", (e) => {
         modalWindowBlock.classList.add("modal_invisible")
         document.body.classList.remove('body_no_scroll')
     }
-},true)
+}, true)
 
 
 // Burger 
 
 anchors.forEach(el => {
     el.addEventListener('click', (e) => {
-        setTimeout(()=> {
+        setTimeout(() => {
             burger.classList.remove('active')
             burgerWrapper.classList.remove('active')
             document.body.classList.remove('body_no_scroll')
-        },100)
+        }, 100)
     })
 })
 let left = 0;
 // carousel
 const container = document.querySelector(".slider_container")
+const cartContainer = document.querySelector(".slider_cart_container")
 const sliderLine = document.querySelector(".slider-line")
-container.addEventListener("click",(e)=> {
-    if(e.target.closest(".arrow_prev") != null) {
-        left -= 1080;
+
+
+container.addEventListener("click", (e) => {
+    const elementsNum = Math.floor(sliderLine.getBoundingClientRect().width / 270)
+    const gapWidth = (sliderLine.getBoundingClientRect().width - elementsNum*270)/(elementsNum-1) || 0
+    
+    const offset = elementsNum*(270 + gapWidth)
+    console.log(offset)
+    if (e.target.closest(".arrow_prev") != null) {
+        left -= offset;
+        if (left == -3 * offset) {
+            left = 0;
+        }
     }
-    if(e.target.closest(".arrow_next")  != null) {
-        left += 1080;
-    } 
+    if (e.target.closest(".arrow_next") != null) {
+        left += offset;
+        if (left > 0) {
+            left = -2 * offset;
+        }
+    }
     sliderLine.style.left = `${left}px`;
 })
-
-// sliderLine.addEventListener("transitionend",(e)=> {
-//     if(left == -2*1080) {
-//         left = 0;
-//     }
-//     if(left == 0) {
-//         left = -2 * 1080;
-//     }
-//     sliderLine.style.transition = "none";
-//     sliderLine.style.left = `${left}px`;
-// })

@@ -898,6 +898,10 @@ p {
         height: 64px;
     }
 
+    .slider-line {
+        gap: 0;
+    }
+
     .slider_cart:nth-of-type(3),
     .slider_cart:nth-of-type(4),
     .slider_cart:nth-of-type(5),
