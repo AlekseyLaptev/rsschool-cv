@@ -100,6 +100,7 @@
 }
 
 .nav_first,
+.nav_start,
 .nav_position:disabled {
     border: 2px solid #CDCDCD;
     color: #CDCDCD;
@@ -124,7 +125,7 @@
 /* -- Footer -- */
 
 .our_footer {
-    background: url(noise_lines_transparent@2X.png), radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%)
+    background: radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%);
 }
 
 .footer .wrapper {

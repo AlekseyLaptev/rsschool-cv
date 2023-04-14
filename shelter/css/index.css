@@ -621,7 +621,7 @@ p {
     font-family: 'Arial';
     font-weight: 400;
     font-style: normal;
-    src: url(../assets/fonts/Arial\ regular.ttf);
+    src: url(../assets/fonts/ArialMdm.ttf);
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1278px) {
@@ -629,7 +629,7 @@ p {
     /* -- Section Main -- */
 
     .main {
-        background: url(noise_lines_transparent@2X.png), radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%)
+        background: url(noise_lines_transparent@2X.png), radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%);
     }
 
     .wrapper {
