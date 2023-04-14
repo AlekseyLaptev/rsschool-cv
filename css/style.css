@@ -1,0 +1,358 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  color: inherit;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.main {
+  max-width: 1920px;
+  margin: 0 auto;
+  background-color: #fdfdfd;
+  font-family: "Poppins";
+  border: 1px solid #e0e0e0;
+  border-radius: 25px;
+  font-size: 20px;
+  overflow: hidden;
+}
+
+.header {
+  margin-top: 50px;
+  height: 250px;
+  background-color: #e0e0e0;
+  position: relative;
+}
+
+section {
+  margin: 60px 45px;
+  display: flex;
+  border-bottom: 1px solid #464849;
+}
+
+.name_container {
+  padding-top: 50px;
+  padding-left: 45px;
+}
+
+h1 {
+  font-size: 75px;
+}
+
+h2 {
+  font-size: 35px;
+}
+
+.img_container {
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;
+  overflow: hidden;
+  position: absolute;
+  right: 50px;
+  top: 35px;
+}
+
+img {
+  height: 100%;
+  width: 100%;
+}
+
+.container {
+  width: 25%;
+  padding-right: 20px;
+  border-right: 1px solid #464849;
+  transform: translateY(-5px);
+}
+
+ul {
+  list-style-type: none;
+  margin-top: 105px;
+}
+
+.item {
+  display: flex;
+  gap: 20px;
+}
+
+.shot_info {
+  width: 66%;
+  padding-left: 8px;
+  padding-bottom: 50px;
+}
+
+.shot_info * {
+  padding-left: 50px;
+}
+
+hr {
+  margin: 30px 0;
+}
+
+.info {
+  margin-bottom: 50px;
+}
+
+.skill {
+  margin-top: 50px;
+  padding-bottom: 50px;
+}
+
+.code {
+  margin-top: 50px;
+  width: 350px;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 50px 15px;
+  gap: 10px;
+
+  cursor: pointer;
+}
+
+footer {
+  display: flex;
+  background-color: #e0e0e0;
+  color: black;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+
+.href_container {
+  margin-left: 25px;
+  padding: 25px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.year {
+  display: flex;
+  gap: 10px;
+}
+
+.logo_container {
+  margin-right: 50px;
+}
+
+a:hover {
+  color: blue;
+}
+
+.logo {
+  width: 100px;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url(../assets/fonts/Poppins/Poppins-LightItalic.ttf);
+}
+
+@media only screen and (min-width:706px) and (max-width:1360px) {
+  .main {
+    max-width: 768px;
+    font-size: 18px;
+  }
+
+  .header {
+    margin-top: 30px;
+    height: 200px;
+  }
+
+  section {
+    margin: 30px 25px;
+  }
+
+  .name_container {
+    padding-top: 30px;
+    padding-left: 25px;
+  }
+
+  h1 {
+    font-size: 55px;
+  }
+
+  h2 {
+    font-size: 25px;
+  }
+
+  .img_container {
+    width: 200px;
+    height: 200px;
+    right: 30px;
+    top: 70px;
+  }
+
+  .container {
+    padding-right: 10px;
+  }
+
+  ul {
+    margin-top: 55px;
+  }
+
+  .item {
+    gap: 10px;
+  }
+
+  .shot_info {
+    padding-bottom: 30px;
+  }
+
+  .shot_info * {
+    padding-left: 30px;
+  }
+
+  hr {
+    margin: 20px 0;
+  }
+
+  .info {
+    margin-bottom: 30px;
+  }
+
+  .skill {
+    margin-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  .code {
+    margin-top: 30px;
+    width: 300px;
+  }
+
+  .nav {
+    margin: 0 30px 15px;
+  }
+
+  footer {
+    margin-bottom: 30px;
+  }
+
+  .href_container {
+    margin-left: 10px;
+    padding: 20px;
+    gap: 10px;
+  }
+
+  .logo_container {
+    margin-right: 5px;
+  }
+
+  .logo {
+    width: 80px;
+  }
+}
+
+@media only screen and (min-width:360px) and (max-width:705px) {
+  .main {
+    width: 360px;
+    font-size: 14px;
+  }
+
+  .header {
+    margin-top: 15px;
+    height: 100px;
+  }
+
+  section {
+    margin: 15px 5px;
+  }
+
+  .name_container {
+    padding-top: 0px;
+    padding-left: 15px;
+  }
+
+  h1 {
+    font-size: 35px;
+  }
+
+  h2 {
+    font-size: 18px;
+  }
+
+  .img_container {
+    width: 100px;
+    height: 100px;
+    right: 10px;
+    top: 25px;
+  }
+
+  .container {
+    width: 37%;
+    padding-right: 10px;
+  }
+
+  ul {
+    margin-top: 25px;
+  }
+
+  .item {
+    gap: 10px;
+  }
+
+  .shot_info {
+    padding-bottom: 0px;
+    padding-left: 0;
+  }
+
+  .shot_info * {
+    padding-left: 10px;
+  }
+
+  hr {
+    margin: 10px 0;
+  }
+
+  .info {
+    margin-bottom: 15px;
+  }
+
+  .skill {
+    margin-top: 20px;
+    padding-bottom: 10px;
+  }
+
+  .code {
+    margin-top: 15px;
+    margin-right: 0;
+    width: 200px;
+  }
+
+  .nav {
+    margin: 0 20px 10px;
+  }
+
+  footer {
+    margin-bottom: 20px;
+  }
+
+  .href_container {
+    display: inline;
+    text-align: center;
+    padding: 10px;
+    gap: 5px;
+  }
+
+  .href_container p {
+    padding-left: 10px;
+    margin: 0 auto;
+  }
+
+  .logo_container {
+    margin-right: 5px;
+  }
+
+  .logo {
+    width: 40px;
+    margin: 0 auto;
+  }
+}
